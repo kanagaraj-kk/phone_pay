@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-engine = create_engine("mysql+pymysql://root:Sql25@127.0.0.1:3306/phonepe", pool_pre_ping=True)
+engine = create_engine("mysql+pymysql://root:Sql25@127.0.0.1:3306/phone_pay", pool_pre_ping=True)
 
 
 Agg_Trans = pd.read_sql("SELECT * FROM agg_trans", con=engine)
